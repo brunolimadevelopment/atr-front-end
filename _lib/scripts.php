@@ -11,8 +11,8 @@
 function call_script() {
 
 
-    wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.min.css', array(), '1.0', true);
-    wp_register_script('main', get_template_directory_uri() . '/assets/js/main.min.js', array(), '3.1', true);
+    wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.min.css', array(), '2.0', false);
+    wp_register_script('main', get_template_directory_uri() . '/assets/js/main.min.js', array(), '1.0', false);
 
     wp_enqueue_script('main');
 

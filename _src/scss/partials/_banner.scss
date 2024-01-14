@@ -1,0 +1,21 @@
+.#{$prefix}-section-banner {
+    height: rem(614);
+    margin-top: rem(-100);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include e('title') {
+        @include typography(700, 38, $font-default);
+        font-style: normal;
+        color: cl(white);
+    }
+
+    @include e('description') {
+        @include typography(400, 16, $font-default);
+        color: cl(white);
+        margin: rem(15) rem(0);
+        max-width: 70%;
+    }
+}

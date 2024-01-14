@@ -35,8 +35,7 @@ function tema_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'menu_1' => 'Menu Header',
-    'menu_2' => 'Menu Footer',
-    'menu_3' => 'Menu Mobile',
+    'menu_2' => 'Menu Mobile',
   ));
 
   add_editor_style('/assets/css/editor-style.css');//..Tell the TinyMCE editor to use a custom stylesheet

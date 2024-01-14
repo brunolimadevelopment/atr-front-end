@@ -44,7 +44,7 @@ function setup_suporte_widgets() {
 }
 
 function suporte_dashboard_help() {
-    echo 'Se você tiver qualquer dúvida ou precisar de ajuda, por favor, entre em contato: <a href="https://web.whatsapp.com/send?phone=5585987745679&amp;text=Ol%C3%A1,%20como%20podemos%20ajuda-lo?" target="_blank" title="Whatsapp">(85) 9 8774-5679</a> ou mande um e-mail para <a href="mailto:bruno@convertte.com.br">bruno@convertte.com.br</a>';
+    echo 'Se você tiver qualquer dúvida ou precisar de ajuda, por favor, entre em contato: <a href="https://web.whatsapp.com/send?phone=5585987745679&amp;text=Ol%C3%A1,%20como%20podemos%20ajuda-lo?" target="_blank" title="Whatsapp">(85) 9 8774-5679</a>';
 }
 
 add_action('wp_dashboard_setup', 'setup_suporte_widgets');

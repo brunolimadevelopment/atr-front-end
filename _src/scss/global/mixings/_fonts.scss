@@ -1,40 +1,14 @@
-// -----------------------------------------------------------
-// Fonts
-// -----------------------------------------------------------
-// @font-face {
-//   font-family: 'corantobold';
-//   src: url('../../../fonts/coranto-bold-webfont.woff2') format('woff2'),
-//        url('../../../fonts/coranto-bold-webfont.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-
-// }
-
-// regular 400 - medium 500 - semi-bold 600 - bold 700 
-//@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
-//@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 @use "sass:math";
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$font-default      : 'PT Sans', Arial, helvetica, sans-serif !default;
-$font-poppins      : 'PT Sans', sans-serif;
-
+$font-default      : 'Poppins', sans-serif;
 
 
-
-
-//REM
 @function rem($pxsize) { @return math.div($pxsize, 16)+rem; }
 
-
 @mixin typography( $weight: $x, $size: $y, $font: $font-default) {
-  
   font: $weight rem( $size ) $font;
-
 }
 
 $font-sizes: (

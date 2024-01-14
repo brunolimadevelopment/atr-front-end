@@ -10,23 +10,23 @@
 
 
 
-function post_type_mimos_register() {
+function post_type_tratamentos_register() {
 
     $labels = array(
 
-        'name' => 'Mimos',
+        'name' => 'Tratamentos',
 
-        'singular_name' => 'Mimos',
+        'singular_name' => 'Tratamento',
 
-        'menu_name' => 'Mimos',
+        'menu_name' => 'Tratamentos',
 
-        'add_new' => _x('Adicionar Mimos', 'item'),
+        'add_new' => _x('Adicionar Tratamentos', 'item'),
 
-        'add_new_item' => __('Adicionar Novo Mimos'),
+        'add_new_item' => __('Adicionar Novo Tratamento'),
 
-        'edit_item' => __('Editar Mimos'),
+        'edit_item' => __('Editar Tratamento'),
 
-        'new_item' => __('Novo Mimos')
+        'new_item' => __('Novo Tratamento')
 
     );
 
@@ -46,7 +46,7 @@ function post_type_mimos_register() {
 
         'query_var' => true,
 
-        'rewrite' => array('slug' => 'mimos'),
+        'rewrite' => array('slug' => 'tratamentos'),
 
         'capability_type' => 'post',
 
@@ -56,7 +56,7 @@ function post_type_mimos_register() {
 
         'menu_position' => 4,
 
-        'menu_icon' => 'dashicons-book',
+        'menu_icon' => 'dashicons-plus-alt',
 
         'supports' => array('title','', 'thumbnail')
 
@@ -66,4 +66,4 @@ function post_type_mimos_register() {
 
 }
 
-add_action('init', 'post_type_mimos_register');
+add_action('init', 'post_type_tratamentos_register');

@@ -15,10 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.3",
     "fs.js": "^0.0.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
     "sass": "^1.69.7"

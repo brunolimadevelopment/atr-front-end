@@ -1,0 +1,24 @@
+.#{$prefix}-btn {
+    @extend %transitionAll;
+    @include radius(rem(38));
+    @include typography(400, 16, $font-default);
+    line-height: rem(24);
+    background-color: cl(btns, orange);
+    border: rem(0);
+    color: cl(white);
+    padding: rem(9) rem(30);
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover{
+        background-color: cl(orangeHover);
+    }
+
+    @include m('small') {
+        @include size(rem(150), rem(42));
+    }
+
+    @include m('large') {
+        @include size(rem(176), rem(42));
+    }
+}
