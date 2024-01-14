@@ -1,0 +1,89 @@
+.#{$prefix}-plans {
+    
+    @include e('all') {
+        width: 100%;
+        text-align: center;
+        margin-top: rem(15);
+    }
+}
+
+.#{$prefix}-owlPlans {
+    margin-top: rem(12);
+
+    @include e('item') {
+        @include size(auto, rem(169));
+        @include radius(rem(10));
+        border: rem(1) solid #E0E0E0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @include e('thumb') { 
+        width: auto!important;
+    }
+
+    .owl-nav {
+        position: absolute;
+        right: rem(0);
+        top: rem(-70);
+        height: rem(60);
+        width: rem(100);
+    }
+
+    .owl-prev,
+    .owl-next {
+
+        &:before {
+            content: "";
+            background: url('../../assets/images/arrow.svg')no-repeat;
+            display: block;
+            @include size(rem(35));
+        }
+
+        span {
+            display: none;
+        }
+    }
+    
+    .owl-next {
+
+        &:before {
+            content: "";
+            transform: rotate(540deg);
+            
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        @include size(rem(50) rem(33));
+        @include radius(50%);
+        display: block;
+        font-size: 0;
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .2s ease-in-out;
+        z-index: 999;
+
+        &:before {
+
+            color: cl(gray);
+            font-size: rem(45);
+            z-index: 99;
+        }
+    }
+    .owl-next {
+        left: auto;
+        right: 0%;
+        top: rem(24);
+    }
+}

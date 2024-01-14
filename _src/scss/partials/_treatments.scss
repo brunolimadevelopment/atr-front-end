@@ -1,0 +1,17 @@
+.#{$prefix}-treatments {
+    @extend %offsetPadding;
+
+    
+}
+
+.#{$prefix}-treatments-grid {
+    margin-top: rem(30);
+
+    @include e('item') {
+        padding-left: rem(0);
+
+        &:last-child {
+            padding-right: rem(0);
+        }
+    }
+}

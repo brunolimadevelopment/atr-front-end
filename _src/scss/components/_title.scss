@@ -1,0 +1,32 @@
+.#{$prefix}-title-section {
+    color: cl(titles, green);
+    margin: rem(12) rem(0);
+    position: relative;
+
+    &:before{
+        content: '';
+        @include radius(rem(6));
+        @include size(rem(38), rem(7));
+        background-color: cl(orange);
+        display: block;
+        position: absolute;
+        top: rem(-19);
+    }
+
+    @include m('white') {
+        color: cl(titles, white);
+    }
+}
+
+
+.#{$prefix}-description-section {
+    @include typography(400, 16, $font-default);
+    line-height: rem(29);
+    color: cl(gray);
+    margin-bottom: rem(20);
+
+    @include m('white') {
+        color: cl(titles, white);
+    }
+
+}
