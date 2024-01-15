@@ -1,0 +1,16 @@
+.#{$prefix}-contact {
+    @extend %offsetPadding; 
+    
+    
+    @include e('option') {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(15);
+        
+        span {
+            margin-left: rem(10);
+            color: cl(gray);
+            line-height: rem(24);
+        }
+    }
+}

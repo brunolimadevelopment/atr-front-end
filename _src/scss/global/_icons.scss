@@ -1,0 +1,17 @@
+.#{$prefix}-icon {
+    height: rem(24);
+    display: inline-block;
+    background-size: cover;
+    
+    @include m('whatsapp'){
+        background-image: url('../../assets/images/whatsapp.svg');
+        width: rem(24);
+    }
+
+    @include m('location'){
+        background-image: url('../../assets/images/location.svg');
+        width: rem(38);
+    }
+    
+   
+}

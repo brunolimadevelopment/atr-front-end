@@ -4,4 +4,7 @@
 <?php get_template_part('templates/frontpage','treatments');?>
 <?php get_template_part('templates/frontpage','plans');?>
 <?php get_template_part('templates/frontpage','differences');?>
+<?php get_template_part('templates/frontpage','testimony');?>
+<?php get_template_part('templates/frontpage','blog');?>
+<?php get_template_part('templates/frontpage','contact');?>
 <?php get_template_part('templates/html', 'footer'); ?>

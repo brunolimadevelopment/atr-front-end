@@ -3,8 +3,8 @@
   <div class="container">
     <div class="row at-header__row">
       <div class="col-1 col-md-3 col-lg-5">
-        <a class="navbar-brand" href="<?php echo get_site_url(); ?>" title="<?php the_title_attribute(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/atratis.svg" alt="Atratis" width="182" height="46" class="d-inline-block align-text-top">
+        <a href="<?php echo get_site_url(); ?>" title="<?php the_title_attribute(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/atratis.svg" alt="Atratis" width="182" height="46">
         </a>
       </div>
       <div class="col-1 col-md-9 col-lg-7 at-header__nav">

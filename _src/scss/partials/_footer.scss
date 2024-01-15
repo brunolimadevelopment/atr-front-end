@@ -1,3 +1,12 @@
-.footer {
-    background-color: red;
+.#{$prefix}-footer {
+    background-color: #288F45;
+    height: rem(101);
+    display: flex;
+    align-items: center;
+}
+
+.#{$prefix}-footer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

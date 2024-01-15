@@ -1,8 +1,9 @@
-.#{$prefix}-treatments {
+.#{$prefix}-blog {
     @extend %offsetPadding;    
+    background-color: cl(graySlim);
 }
 
-.#{$prefix}-treatments-grid {
+.#{$prefix}-blog-grid {
     margin-top: rem(30);
 
     @include e('item') {
