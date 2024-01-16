@@ -20,6 +20,7 @@ This WP Theme was developed with the following technologies:
 - GULP ✔
 - PRE-PROCESSADOR SASS ✔
 - PLUGIN ACF FREE ✔
+- PLUGIN CONTACT FORM 7
 - PHP
 
 ## How To Use
