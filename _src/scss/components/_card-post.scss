@@ -1,9 +1,10 @@
 .#{$prefix}-card-post {
-    
     @include radius(rem(10));
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    background-color: cl(white);
+    box-shadow: rem(0) rem(0) rem(10) rem(0) rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
+    
 
     @include e('thumb') {
         @include size(100%, rem(215));
@@ -15,6 +16,7 @@
         }
 
         @include m('medium') {
+            @include radius(rem(10));
             @include size(100%, rem(186));
         }
     }
@@ -24,7 +26,7 @@
     }
 
     @include e('title') {
-        @include typography(700, 20, $font-default);
+        @include typography(700, 18, $font-default);
         color: cl(titles, green);
         line-height: rem(30);
     }
@@ -34,6 +36,13 @@
         color: cl(gray);
         line-height: rem(24);
         margin: rem(6) rem(0) rem(20);
+        
+        p {
+            @include typography(400, 14, $font-default);
+            color: cl(gray);
+            line-height: rem(24);
+            margin: rem(6) rem(0) rem(20);
+        }
     }
 
     @include e('people') {

@@ -41,5 +41,14 @@ jQuery(function ($) {
       });
     }
     owlPlans();
+
+    function activeMenu() {
+      $(".menu-item a:first").addClass("active-menu");
+      $(".menu-item a").on("click", function () {
+        $(".menu-item a").removeClass("active-menu");
+        $(this).addClass("active-menu");
+      });
+    }
+    activeMenu();
   });
 });

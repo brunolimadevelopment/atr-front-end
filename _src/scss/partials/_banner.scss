@@ -5,6 +5,11 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 56%;
+
+    @include respond-to(md) {
+        background-position: center;
+    }
 
     @include e('title') {
         @include typography(700, 38, $font-default);

@@ -1,6 +1,5 @@
 .#{$prefix}-contact {
-    @extend %offsetPadding; 
-    
+    padding: rem(60) rem(0);
     
     @include e('option') {
         display: flex;
@@ -13,4 +12,8 @@
             line-height: rem(24);
         }
     }
+}
+
+.#{$prefix}-contact-grid {
+    justify-content: space-between;
 }

@@ -1,5 +1,19 @@
 .#{$prefix}-about {
     background-color: cl(graySlim);
-    padding: rem(60) rem(0);
+    padding: rem(0) rem(0) rem(60);
+
+    @include respond-to(md) {
+        padding: rem(60) rem(0);        
+    }
+
+    @include e('thumb') {
+        max-width: 100%;
+        object-fit: contain;
+
+        @include respond-to(md) {
+            margin-left: rem(-31);
+            object-fit: none;
+        }
+    }
 }
 

@@ -1,5 +1,5 @@
 .#{$prefix}-blog {
-    @extend %offsetPadding;    
+    padding: rem(60) rem(0);   
     background-color: cl(graySlim);
 }
 
@@ -7,10 +7,15 @@
     margin-top: rem(30);
 
     @include e('item') {
-        padding-left: rem(0);
+        margin-bottom: rem(15);
 
-        &:last-child {
-            padding-right: rem(0);
+        @include respond-to(md) {
+            padding-left: rem(0);
+            margin-bottom: rem(0);
+
+            &:last-child {
+                padding-right: rem(0);
+            }
         }
     }
 }

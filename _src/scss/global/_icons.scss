@@ -11,6 +11,11 @@
     @include m('location'){
         background-image: url('../../assets/images/location.svg');
         width: rem(38);
+        height: rem(32);
+
+        @include respond-to(md) {
+            height: rem(24);
+        }
     }
     
    

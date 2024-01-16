@@ -1,8 +1,8 @@
-<section class="at-about">
+<section class="at-about" id="about">
     <div class="container">
         <div class="row">
         <div class="col-md-6">
-        <img src="<?php the_field('about_image'); ?>" alt="Atratis" width="576" height="369" class="d-inline-block align-text-top">
+        <img src="<?php the_field('about_image'); ?>" alt="Atratis" width="576" height="369" class="at-about__thumb">
 
         </div>
         <div class="col-md-6">

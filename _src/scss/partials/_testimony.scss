@@ -1,9 +1,19 @@
 .#{$prefix}-testimony {
-    padding: rem(90) rem(0);
+    padding: rem(60) rem(0);
 
+    @include respond-to(md) {
+        padding: rem(90) rem(0);
+    }
 }
 
 .#{$prefix}-testimony-grid {
     margin-top: rem(60);
 
+    @include e('item') {
+        margin-bottom: rem(60);
+
+        @include respond-to(md) {
+            margin-bottom: rem(0);
+        }
+    }
 }
